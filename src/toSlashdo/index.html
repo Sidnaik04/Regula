@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToSlashDo</title>
+
+    <link rel="stylesheet" href="../output.css" />
+
+    <style>
+      li {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      li.completed {
+        text-decoration: line-through;
+        opacity: 0.7;
+      }
+
+      li button {
+        background-color: #d32f2f;
+        border: none;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      li button:hover {
+        background-color: #b71c1c;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-white flex justify-center items-center h-screen font-mono"
+  >
+    <div class="container bg-gray-700 p-5 rounded-xl w-[400px] shadow-2xl">
+      <h1 class="text-center mb-5 text-2xl font-bold">ToSlashDo</h1>
+      <div id="input-container" class="mb-5 space-y-3">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new task..."
+          class="bg-gray-600 w-[70%] p-3 text-white rounded-lg border-none outline-none focus:ring"
+        />
+        <button
+          id="taskBtn"
+          class="w-[25%] p-3 bg-blue-500 rounded-lg cursor-pointer hover:bg-blue-700 duration-300 text-sm font-bold"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <ul id="todo-list" class="list-none p-0"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
