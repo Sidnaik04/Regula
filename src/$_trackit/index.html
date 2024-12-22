@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$_trackit</title>
+
+    <link rel="stylesheet" href="../output.css" />
+
+    <style>
+      #expense-list li {
+        background-color: #1f2937;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      button {
+        background-color: #3b82f6;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-white flex justify-center items-center h-screen font-mono"
+  >
+    <div
+      class="container bg-gray-700 p-5 rounded-xl w-full sm:w-[450px] shadow-2xl mx-4 sm:mx-6"
+    >
+      <h1 class="text-center mb-5 font-extrabold text-2xl">$_trackit</h1>
+
+      <form
+        id="expense-form"
+        class="flex flex-col sm:flex-row justify-between mb-5"
+      >
+        <input
+          type="text"
+          id="expense-name"
+          placeholder="Product"
+          required
+          class="w-full sm:w-[45%] p-[10px] bg-gray-600 text-white border-none rounded-md outline-none m-1 focus:ring font-bold"
+        />
+
+        <input
+          type="number"
+          id="expense-amount"
+          placeholder="Amount"
+          required
+          class="w-full sm:w-[45%] p-[10px] bg-gray-600 text-white border-none rounded-md outline-none m-1 focus:ring font-bold"
+        />
+
+        <button
+          type="submit"
+          class="bg-blue-500 rounded-lg cursor-pointer hover:bg-blue-700 duration-300 text-sm font-bold p-2 mt-2 sm:mt-0 sm:ml-2"
+        >
+          Add Expense
+        </button>
+      </form>
+
+      <h2 class="text-center mb-5 font-bold text-lg">Expenses</h2>
+      <ul id="expense-list" class="list-none p-0"></ul>
+
+      <div id="total" class="text-right">
+        <h3 class="text-center mb-5 font-bold text-xl">
+          Total: $<span id="total-amount">0.00</span>
+        </h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
