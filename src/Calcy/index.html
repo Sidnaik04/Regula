@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Calculator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../output.css" />
+
+    <style>
+        button:active,
+        button:focus {
+            filter: brightness(120%);
+        }
+    </style>
+
 </head>
 <body class="bg-gray-900 text-white h-screen flex justify-center items-center font-mono">
     <div class="container bg-gray-700 p-6 w-full max-w-[400px] rounded-2xl mx-4 sm:mx-6">
+
         <div class="calc-text p-1 mb-5">
             <p name="user-input" id="input" class="w-full text-5xl text-end bg-transparent border-none outline-none break-words break-all">0</p>
         </div>
@@ -41,5 +50,6 @@
             <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
