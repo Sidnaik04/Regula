@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white h-screen flex justify-center items-center font-mono">
+    <div class="container bg-gray-700 p-6 w-full max-w-[400px] rounded-2xl mx-4 sm:mx-6">
+        <div class="calc-text p-1 mb-5">
+            <p name="user-input" id="input" class="w-full text-5xl text-end bg-transparent border-none outline-none break-words break-all">0</p>
+        </div>
+
+        <div class="calc-btn grid grid-cols-4 gap-3">
+            <!-- Top Row -->
+            <button type="button" class="key-others operations bg-gray-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-900 duration-300">AC</button>
+            <button type="button" class="key-others operations bg-gray-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-900 duration-300">DEL</button>
+            <button type="button" class="key-others operations bg-gray-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-900 duration-300">%</button>
+            <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">/</button>
+
+            <!-- Number Rows -->
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">7</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">8</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">9</button>
+            <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">*</button>
+
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">4</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">5</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">6</button>
+            <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">-</button>
+
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">1</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">2</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">3</button>
+            <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">+</button>
+
+            <!-- Bottom Row -->
+            <button type="button" class="key-zero numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-full hover:bg-gray-950 duration-300 col-span-2">0</button>
+            <button type="button" class="numbers bg-gray-800 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-gray-950 duration-300">.</button>
+            <button type="button" class="key-operate operations bg-orange-500 text-lg sm:text-2xl border-none rounded-full cursor-pointer h-[15vw] max-h-[65px] w-[15vw] max-w-[65px] hover:bg-orange-600 duration-300">=</button>
+        </div>
+    </div>
+</body>
+</html>
